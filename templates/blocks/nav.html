@@ -1,0 +1,13 @@
+{% load i18n %}
+<div class="large-3 pull-9 columns">
+        <ul class="side-nav">
+            <li><a href="{% url 'index' %}">{% trans 'Главная' %}</a></li>
+            {% if request.user.is_authenticated %}
+                <li><a href="{% url 'users:profile' %}">{% trans 'Профиль' %}</a></li>
+                <li><a href="{% url 'users:edit' %}">{% trans 'Редактировать профиль' %}</a></li>
+                <li><a href="{% url 'game:game' %}">{% trans 'Играть' %}</a></li>
+            {% endif %}
+            <li><a href="{% url 'users:listing' %}">{% trans 'Список игроков' %}</a></li>
+            {% if request.user.is_superuser == True %}<li><a href="/admin">{% trans 'Адмимко' %}</a></li>{% endif %}
+        </ul>
+</div>

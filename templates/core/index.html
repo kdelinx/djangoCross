@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Главная страница{% endblock %}
+{% block base_body %}
+    <div class="row">
+        <div class="large-12">
+            {% for score in result_list %}
+                <p class="text-center">
+                    <span style="font-size: 24px">{{ score.user.get_full_name }} --- {{ score.score }}</span>
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

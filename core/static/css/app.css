@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'),
+         local('OpenSans-Light'),
+            url(../fonts/opensans/OpenSans-Light.woff) format('woff'),
+            url(../fonts/opensans/OpenSans-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans'),
+         local('OpenSans'),
+            url(../fonts/opensans/OpenSans-Regular.woff) format('woff'),
+            url(../fonts/opensans/OpenSans-Regular.ttf) format('truetype');
+}
+html, body {
+    color: #4C4C4C;
+    font-size: 16px;
+    /*background: #ded5cf url(../img/background.jpg) repeat;*/
+}
+* {
+    font-family: 'Open Sans', GillSans, Calibri, Trebuchet, sans-serif !important;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}

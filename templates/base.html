@@ -1,0 +1,38 @@
+{% load static %}
+{% load compress %}
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>{% block title %}Крестики-нолики{% endblock %}</title>
+    {% compress css %}
+        <link href="{% static 'css/foundation.min.css' %}" rel="stylesheet"/>
+        <link rel=stylesheet href="{% static 'css/app.css' %}"/>
+    {% endcompress %}
+    {% compress js %}
+        <script src="{% static 'js/modernizr.js' %}"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/foundation.min.js' %}"></script>
+        <script src="{% static 'js/placeholder.js' %}"></script>
+        <script src="{% static 'js/fastclick.js' %}"></script>
+    {% endcompress %}
+</head>
+<body>
+{% block header %}{% include 'blocks/header.html' %}{% endblock %}
+<div class="row">
+    <div class="large-9 push-3 columns">
+        {% block base_body %}{% endblock %}
+    </div>
+{% block nav %}{% include 'blocks/nav.html' %}{% endblock %}
+</div>
+{% block footer %}{% include 'blocks/footer.html' %}{% endblock %}
+<script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
+</body>
+</html>

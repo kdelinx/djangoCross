@@ -1,0 +1,18 @@
+<footer class="row">
+    <div class="large-12 columns">
+    <hr/>
+        <div class="row">
+            <div class="large-6 columns">
+                <p>&copy; Copyright {% now 'Y' %}. {{ project_name }}.<br>
+                    <small>{{ project_time }} <br> {{ project_phone }} <br> {{ project_place }}</small></p>
+            </div>
+            <div class="large-6 columns">
+                <ul class="inline-list right">
+                    {% for foo in article %}
+                        <li><a href="{{ core }}{{ foo.page }}">{{ foo.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

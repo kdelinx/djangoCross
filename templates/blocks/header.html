@@ -1,0 +1,34 @@
+{% load static %}
+{% load i18n %}
+<div class="row">
+    <div class="large-3 columns">
+        <h1><a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}"/></a></h1>
+    </div>
+    <div class="large-9 columns">
+        <ul class="inline-list right">
+            {% if request.user.is_authenticated %}
+                <li><a href="{% url 'users:profile' %}">{{ request.user.get_full_name }}</a></li>
+                <li><a href="{% url 'logout' %}">{% trans 'Выход' %}</a></li>
+            {% else %}
+                <li>{% trans 'Здравствуй, гость!' %}</li>
+                <li><a href="{% url 'register' %}">{% trans 'Регистрация' %}</a></li>
+                <li><a href="{% url 'login' %}">{% trans 'Авторизация' %}</a></li>
+                <li><a href="{% url 'password_reset' %}">{% trans 'Напомнить пароль' %}</a></li>
+            {% endif %}
+        </ul>
+        <ul>
+            {% for lang in LANGUAGES %}
+                <li>
+                    <form name="setLang{{ lang.1}}" action="{% url 'set_language' %}" method="POST">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path }}">
+                        <input type="hidden" name="language" value="{{ lang.0 }}">
+                        <a href="#" onclick="document.setLang{{ lang.1 }}.submit();
+                            return false;">{{ lang.1 }}
+                        </a>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

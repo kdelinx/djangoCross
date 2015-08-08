@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Редактирование профиля{% endblock %}
+{% block base_body %}
+    <div class="row">
+        <div class="large-12 columns">
+            <form class="form" method="POST" action="">
+                {% csrf_token %}
+                {{ form.errors }}
+                {{ form.as_p }}
+                <input class="button small" type="submit" value="{% trans 'Сохранить' %}">
+            </form>
+        </div>
+    </div>
+{% endblock %}

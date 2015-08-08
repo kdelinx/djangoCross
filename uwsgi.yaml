@@ -1,0 +1,20 @@
+uwsgi:
+    plugins: python
+    processes: 2
+    workers: 2
+    socket: /tmp/djangoCross.sock
+    pythonpath: /home/web/cross/djangoCross
+    env: DJANGO_SETTINGS_MODULE=settings
+    module: wsgi
+    daemonize: /home/web/cross/logs/uwsgi.log
+    max-requests: 500
+    buffer-size: 32768
+    harakiri: 30
+    reload-mercy: 8
+    master: 1
+    enable-threads: true
+    no-orphans: 1
+    catch-exceptions: false
+    post-buffering: 8192
+    optimize: 2
+    touch-reload: /home/web/cross/uwsgi

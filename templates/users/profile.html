@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}Пользователь{% endblock %}
+{% block base_body %}
+    <div class="row">
+        <div class="large-12 large-text-center"><b>{% trans 'Ваш игровой профиль' %}</b></div>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="text-center">{% trans 'Аватар' %}</div><br>
+            <img src="{{ profile.get_avatar_url }}">
+        </div>
+        <div class="large-9 columns">
+            <p>{% trans 'Информирование' %}</p>
+            <blockquote>{{ profile.get_full_name }}</blockquote>
+            <blockquote>{% trans 'Текущий результат' %} - {{ profile.number }}</blockquote>
+        </div>
+    </div>
+{% endblock %}

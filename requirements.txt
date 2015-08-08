@@ -1,0 +1,12 @@
+# requirements for Django djangoCross
+Django==1.8.2
+django-admin-bootstrapped==2.5.1
+django-compressor==1.4
+django-imagekit==3.2.6
+django-redis-cache==0.13.1
+django-redis-sessions==0.4.0
+ipython==3.1.0
+pilkit==1.1.12
+Pillow==2.8.2
+psycopg2==2.6
+redis==2.10.3

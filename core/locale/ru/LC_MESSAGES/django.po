@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-08 09:14+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: core/models.py:20
+msgid "Название страницы(en)"
+msgstr "Название страницы(en)"
+
+#: core/models.py:24
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: core/models.py:28
+msgid "Текст страницы"
+msgstr "Текст страницы"
+
+#: game/models.py:11
+msgid "Пользователь"
+msgstr ""
+
+#: game/models.py:15
+msgid "Количество балов"
+msgstr ""
+
+#: game/models.py:29
+msgid "First user"
+msgstr "Первый пользователь"
+
+#: game/models.py:34
+msgid "Second user"
+msgstr "Второй пользователь"
+
+#: game/models.py:38
+msgid "row 1 cell 1"
+msgstr "строка 1, ячейка 1"
+
+#: game/models.py:41
+msgid "row 1 cell 2"
+msgstr "строка 1, ячейка 2"
+
+#: game/models.py:44
+msgid "row 1 cell 3"
+msgstr "строка 1, ячейка 3"
+
+#: game/models.py:47
+msgid "row 2 cell 1"
+msgstr "строка 2, ячейка 1"
+
+#: game/models.py:50
+msgid "row 2 cell 2"
+msgstr "строка 2, ячейка 2"
+
+#: game/models.py:53
+msgid "row 2 cell 3"
+msgstr "строка 2, ячейка 3"
+
+#: game/models.py:56
+msgid "row 3 cell 1"
+msgstr "строка 3, ячейка 1"
+
+#: game/models.py:59
+msgid "row 3 cell 2"
+msgstr "строка 3, ячейка 2"
+
+#: game/models.py:62
+msgid "row 3 cell 3"
+msgstr "строка 3, ячейка 3"
+
+#: templates/blocks/header.html:11
+msgid "Выход"
+msgstr "Выход"
+
+#: templates/blocks/header.html:13
+msgid "Здравствуй, гость!"
+msgstr "Здравствуй, гость!"
+
+#: templates/blocks/header.html:14
+msgid "Регистрация"
+msgstr "Регистрация"
+
+#: templates/blocks/header.html:15
+msgid "Авторизация"
+msgstr "Авторизация"
+
+#: templates/blocks/header.html:16
+msgid "Напомнить пароль"
+msgstr "Напомнить пароль"
+
+#: templates/blocks/nav.html:4
+msgid "Главная"
+msgstr "Главная"
+
+#: templates/blocks/nav.html:6
+msgid "Профиль"
+msgstr "Профиль"
+
+#: templates/blocks/nav.html:7
+msgid "Редактировать профиль"
+msgstr "Редактировать профиль"
+
+#: templates/blocks/nav.html:8
+msgid "Играть"
+msgstr "Играть"
+
+#: templates/blocks/nav.html:10
+msgid "Список игроков"
+msgstr "Список игроков"
+
+#: templates/blocks/nav.html:11
+msgid "Адмимко"
+msgstr "Адмимко"
+
+#: templates/users/edit_user.html:11
+msgid "Сохранить"
+msgstr "Сохранить"
+
+#: templates/users/profile.html:6
+msgid "Ваш игровой профиль"
+msgstr "Ваш игровой профиль"
+
+#: templates/users/profile.html:11
+msgid "Аватар"
+msgstr "Аватар"
+
+#: templates/users/profile.html:15
+msgid "Информирование"
+msgstr "Информирование"
+
+#: templates/users/profile.html:17
+msgid "Текущий результат"
+msgstr "Текущий результат"
+
+#: templates/users/register.html:9
+msgid "Подтвердить"
+msgstr "Подтвердить"
+
+#: templates/users/user_list.html:12
+msgid "Баланс"
+msgstr "Баланс"
+
+#: users/admin.py:13
+msgid "User"
+msgstr "Пользователь"
+
+#: users/admin.py:15
+msgid "Permissions"
+msgstr "Настройка доступа"
+
+#: users/forms.py:9
+msgid "Password"
+msgstr "Пароль"
+
+#: users/forms.py:13
+msgid "Password confirm"
+msgstr "Подтверждение пароля"
+
+#: users/models.py:21
+msgid "E-mail"
+msgstr "E-mail"
+
+#: users/models.py:25
+msgid "Логин"
+msgstr "Логин"
+
+#: users/models.py:30
+msgid "Фамилия"
+msgstr "Фамилия"
+
+#: users/models.py:34
+msgid "Имя"
+msgstr "Имя"
+
+#: users/models.py:38
+msgid "Отчество"
+msgstr "Отчество"
+
+#: users/models.py:56
+msgid "Уникальный код"
+msgstr "Уникальный код"
